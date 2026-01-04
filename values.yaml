@@ -1,0 +1,5 @@
+deployment:
+  imageRepo: kattika/catalogue
+  imageVersion: v1
+service:
+  servicePort: 8080 #default value .we can override this value from command line.
