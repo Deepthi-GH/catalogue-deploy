@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: catalogue
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Deepthi-GH/eks-argocd.git # now the source is in this particualr repo under main branch
+    targetRevision: main #which path 
+    path: . # Argo CD, please watch the namespaces/ folder in Git
+    helm:
+      releaseName: catalogue
+      valueFiles:
+      - values-dev.yml
+  destination:
+    server: https://kubernetes.default.svc  #current cluster
+    namespace: argocd
+  syncPolicy:
+    automated:
+      prune: true #if you delete from git,argocd also deltes from cluster.
+      selfHeal: true  #revert the changes that are done manullay in the cluster , to sync git repo
