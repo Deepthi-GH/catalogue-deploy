@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Deepthi-GH/eks-argocd.git # now the source is in this particualr repo under main branch
+    repoURL: https://github.com/Deepthi-GH/catalogue-deploy.git # now the source is in this particualr repo under main branch
     targetRevision: main #which path 
     path: . # Argo CD, please watch the namespaces/ folder in Git
     helm:
