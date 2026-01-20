@@ -12,7 +12,7 @@ spec:
     helm:
       releaseName: catalogue
       valueFiles:
-      - values-dev.yml
+      - values-dev.yaml
   destination:
     server: https://kubernetes.default.svc  #current cluster
     namespace: argocd
