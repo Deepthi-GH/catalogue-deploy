@@ -1,7 +1,7 @@
 @Library('jenkins-shared-library') _
 properties([
   parameters([
-     string(name: 'appVersion', defaultValue: ''), #nodejseks pipeline is sending appversion and deploy to. we have to receive them.
+     string(name: 'appVersion', defaultValue: ''), //nodejseks pipeline is sending appversion and deploy to. we have to receive them.
      booleanParam(name: 'deploy_to', defaultValue: 'dev')
      ])
     ])
