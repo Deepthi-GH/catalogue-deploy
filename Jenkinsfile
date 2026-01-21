@@ -13,4 +13,4 @@ def configMap = [
     deploy_to: (params.deploy_to)
 ]  
 
-EKSDeploy(configMap) #after build we have to call eks deploy. send this configmap.
+EKSDeploy(configMap) //after build we have to call eks deploy. send this configmap.
