@@ -2,7 +2,7 @@
 properties([
   parameters([
      string(name: 'appVersion', defaultValue: ''), //nodejseks pipeline is sending appversion and deploy to. we have to receive them.
-     booleanParam(name: 'deploy_to', defaultValue: 'dev')
+     string(name: 'deploy_to', defaultValue: 'dev')
      ])
     ])
 
