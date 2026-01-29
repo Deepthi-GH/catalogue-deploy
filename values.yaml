@@ -1,5 +1,5 @@
 deployment:
-  imageRepo: kattika/catalogue
-  imageVersion: v1
+  imageRepo: 485658242739.dkr.ecr.us-east-1.amazonaws.com/roboshop/catalogue:ab8c78041
+  imageVersion: IMAGE_VERSION
 service:
   servicePort: 8080 #default value .we can override this value from command line.
